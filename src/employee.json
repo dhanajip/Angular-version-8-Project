@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "name": "Sachin Patil",
+      "designation": "UI/UX Designer",
+      "salary": "50000",
+      "id": 1
+    },
+    {
+      "name": "Sagar Pujari",
+      "designation": "Software Engineer",
+      "salary": "40000",
+      "id": 2
+    },
+    {
+      "name": "Dhanaji Patil",
+      "designation": "Software Engineer",
+      "salary": "58000",
+      "id": 3
+    },
+    {
+      "name": "Sanjay Sawant",
+      "designation": "QA Engineer",
+      "salary": "524445",
+      "id": 4
+    },
+    {
+      "name": "Amol Pawar",
+      "designation": "UI/UX Designer",
+      "salary": "101013",
+      "id": 5
+    },
+    {
+      "name": "Shivaji Dhumal",
+      "designation": "Sales Manager",
+      "salary": "323232",
+      "id": 6
+    },
+    {
+      "name": "Naumaan Lutfi",
+      "designation": "Software Engineer",
+      "salary": "95000",
+      "id": 7
+    }
+  ]
+}

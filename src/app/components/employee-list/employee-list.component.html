@@ -1,0 +1,36 @@
+<div class="container mt-5">
+  <!-- No data message -->
+  <p *ngIf="Employee.length <= 0" class="text-center">There is no employee added yet!</p>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search here as per Name, Desigination and Salary" [(ngModel)]="term">
+  </div>
+  <!-- Employee list -->
+  <table class="table table-bordered" *ngIf="Employee.length > 0">
+    <thead class="table-success">
+      <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+        <th scope="col center">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of Employee | filter:term; let i = index">
+        <th scope="row">{{employee.id}}</th>
+        <td>{{employee.name}}</td>
+        <td>{{employee.designation}}</td>
+        <td>{{employee.salary}}</td>
+        <td>
+          <span class="mr-2" [routerLink]="['/edit-employee/', employee.id]">
+            <button type="button" class="btn btn-success btn-sm">Edit</button>
+          </span>
+          <span (click)="removeEmployee(employee, i)">
+            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>You Have Total Number of Employees: <strong>{{Employee.length}}</strong></p>
+</div>
